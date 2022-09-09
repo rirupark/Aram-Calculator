@@ -1,2 +1,7 @@
-## Aram-Calculator
-Chuseok Challenge 2022
+# Aram-Calculator 📆
+> Chuseok Challenge 2022
+### 1. 목적
+종강까지 아람(기숙사 학식)을 다 먹기 위해 매일 먹어야 할 식수를 계산해주는 앱
+### 2. 기능
+- 매일 먹어야 할 식수 계산
+- 남은 식수의 비용으로 먹을 수 있는 대체 음식 개수 계산
