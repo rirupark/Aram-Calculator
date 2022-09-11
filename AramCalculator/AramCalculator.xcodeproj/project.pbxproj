@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		672A11E828CB0F2A0088C8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672A11E728CB0F2A0088C8CD /* AppDelegate.swift */; };
-		672A11EA28CB0F2A0088C8CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672A11E928CB0F2A0088C8CD /* ViewController.swift */; };
-		672A11EC28CB0F2C0088C8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672A11EB28CB0F2C0088C8CD /* Assets.xcassets */; };
-		672A11EF28CB0F2C0088C8CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672A11ED28CB0F2C0088C8CD /* Main.storyboard */; };
+		679BCA7A28CE700900175CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679BCA7928CE700900175CD5 /* AppDelegate.swift */; };
+		679BCA7C28CE700900175CD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679BCA7B28CE700900175CD5 /* SceneDelegate.swift */; };
+		679BCA7E28CE700900175CD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679BCA7D28CE700900175CD5 /* ViewController.swift */; };
+		679BCA8128CE700900175CD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679BCA7F28CE700900175CD5 /* Main.storyboard */; };
+		679BCA8328CE700B00175CD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 679BCA8228CE700B00175CD5 /* Assets.xcassets */; };
+		679BCA8628CE700B00175CD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679BCA8428CE700B00175CD5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		672A11E428CB0F2A0088C8CD /* AramCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AramCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		672A11E728CB0F2A0088C8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		672A11E928CB0F2A0088C8CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		672A11EB28CB0F2C0088C8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		672A11EE28CB0F2C0088C8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		672A11F028CB0F2C0088C8CD /* AramCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AramCalculator.entitlements; sourceTree = "<group>"; };
+		679BCA7628CE700900175CD5 /* AramCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AramCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		679BCA7928CE700900175CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		679BCA7B28CE700900175CD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		679BCA7D28CE700900175CD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		679BCA8028CE700900175CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		679BCA8228CE700B00175CD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		679BCA8528CE700B00175CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		679BCA8728CE700B00175CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		672A11E128CB0F2A0088C8CD /* Frameworks */ = {
+		679BCA7328CE700900175CD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,30 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		672A11DB28CB0F2A0088C8CD = {
+		679BCA6D28CE700900175CD5 = {
 			isa = PBXGroup;
 			children = (
-				672A11E628CB0F2A0088C8CD /* AramCalculator */,
-				672A11E528CB0F2A0088C8CD /* Products */,
+				679BCA7828CE700900175CD5 /* AramCalculator */,
+				679BCA7728CE700900175CD5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		672A11E528CB0F2A0088C8CD /* Products */ = {
+		679BCA7728CE700900175CD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				672A11E428CB0F2A0088C8CD /* AramCalculator.app */,
+				679BCA7628CE700900175CD5 /* AramCalculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		672A11E628CB0F2A0088C8CD /* AramCalculator */ = {
+		679BCA7828CE700900175CD5 /* AramCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				672A11E728CB0F2A0088C8CD /* AppDelegate.swift */,
-				672A11E928CB0F2A0088C8CD /* ViewController.swift */,
-				672A11EB28CB0F2C0088C8CD /* Assets.xcassets */,
-				672A11ED28CB0F2C0088C8CD /* Main.storyboard */,
-				672A11F028CB0F2C0088C8CD /* AramCalculator.entitlements */,
+				679BCA7928CE700900175CD5 /* AppDelegate.swift */,
+				679BCA7B28CE700900175CD5 /* SceneDelegate.swift */,
+				679BCA7D28CE700900175CD5 /* ViewController.swift */,
+				679BCA7F28CE700900175CD5 /* Main.storyboard */,
+				679BCA8228CE700B00175CD5 /* Assets.xcassets */,
+				679BCA8428CE700B00175CD5 /* LaunchScreen.storyboard */,
+				679BCA8728CE700B00175CD5 /* Info.plist */,
 			);
 			path = AramCalculator;
 			sourceTree = "<group>";
@@ -64,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		672A11E328CB0F2A0088C8CD /* AramCalculator */ = {
+		679BCA7528CE700900175CD5 /* AramCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 672A11F328CB0F2C0088C8CD /* Build configuration list for PBXNativeTarget "AramCalculator" */;
+			buildConfigurationList = 679BCA8A28CE700B00175CD5 /* Build configuration list for PBXNativeTarget "AramCalculator" */;
 			buildPhases = (
-				672A11E028CB0F2A0088C8CD /* Sources */,
-				672A11E128CB0F2A0088C8CD /* Frameworks */,
-				672A11E228CB0F2A0088C8CD /* Resources */,
+				679BCA7228CE700900175CD5 /* Sources */,
+				679BCA7328CE700900175CD5 /* Frameworks */,
+				679BCA7428CE700900175CD5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -78,25 +84,25 @@
 			);
 			name = AramCalculator;
 			productName = AramCalculator;
-			productReference = 672A11E428CB0F2A0088C8CD /* AramCalculator.app */;
+			productReference = 679BCA7628CE700900175CD5 /* AramCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		672A11DC28CB0F2A0088C8CD /* Project object */ = {
+		679BCA6E28CE700900175CD5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					672A11E328CB0F2A0088C8CD = {
-						CreatedOnToolsVersion = 13.2.1;
+					679BCA7528CE700900175CD5 = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 672A11DF28CB0F2A0088C8CD /* Build configuration list for PBXProject "AramCalculator" */;
+			buildConfigurationList = 679BCA7128CE700900175CD5 /* Build configuration list for PBXProject "AramCalculator" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,60 +110,69 @@
 				en,
 				Base,
 			);
-			mainGroup = 672A11DB28CB0F2A0088C8CD;
-			productRefGroup = 672A11E528CB0F2A0088C8CD /* Products */;
+			mainGroup = 679BCA6D28CE700900175CD5;
+			productRefGroup = 679BCA7728CE700900175CD5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				672A11E328CB0F2A0088C8CD /* AramCalculator */,
+				679BCA7528CE700900175CD5 /* AramCalculator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		672A11E228CB0F2A0088C8CD /* Resources */ = {
+		679BCA7428CE700900175CD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				672A11EC28CB0F2C0088C8CD /* Assets.xcassets in Resources */,
-				672A11EF28CB0F2C0088C8CD /* Main.storyboard in Resources */,
+				679BCA8628CE700B00175CD5 /* LaunchScreen.storyboard in Resources */,
+				679BCA8328CE700B00175CD5 /* Assets.xcassets in Resources */,
+				679BCA8128CE700900175CD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		672A11E028CB0F2A0088C8CD /* Sources */ = {
+		679BCA7228CE700900175CD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				672A11EA28CB0F2A0088C8CD /* ViewController.swift in Sources */,
-				672A11E828CB0F2A0088C8CD /* AppDelegate.swift in Sources */,
+				679BCA7E28CE700900175CD5 /* ViewController.swift in Sources */,
+				679BCA7A28CE700900175CD5 /* AppDelegate.swift in Sources */,
+				679BCA7C28CE700900175CD5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		672A11ED28CB0F2C0088C8CD /* Main.storyboard */ = {
+		679BCA7F28CE700900175CD5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				672A11EE28CB0F2C0088C8CD /* Base */,
+				679BCA8028CE700900175CD5 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		679BCA8428CE700B00175CD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				679BCA8528CE700B00175CD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		672A11F128CB0F2C0088C8CD /* Debug */ = {
+		679BCA8828CE700B00175CD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -201,24 +216,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		672A11F228CB0F2C0088C8CD /* Release */ = {
+		679BCA8928CE700B00175CD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -256,91 +270,94 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		672A11F428CB0F2C0088C8CD /* Debug */ = {
+		679BCA8B28CE700B00175CD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AramCalculator/AramCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR3VKXM8PX;
-				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_FILE = AramCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.riru.AramCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		672A11F528CB0F2C0088C8CD /* Release */ = {
+		679BCA8C28CE700B00175CD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AramCalculator/AramCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR3VKXM8PX;
-				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_FILE = AramCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.riru.AramCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		672A11DF28CB0F2A0088C8CD /* Build configuration list for PBXProject "AramCalculator" */ = {
+		679BCA7128CE700900175CD5 /* Build configuration list for PBXProject "AramCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				672A11F128CB0F2C0088C8CD /* Debug */,
-				672A11F228CB0F2C0088C8CD /* Release */,
+				679BCA8828CE700B00175CD5 /* Debug */,
+				679BCA8928CE700B00175CD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		672A11F328CB0F2C0088C8CD /* Build configuration list for PBXNativeTarget "AramCalculator" */ = {
+		679BCA8A28CE700B00175CD5 /* Build configuration list for PBXNativeTarget "AramCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				672A11F428CB0F2C0088C8CD /* Debug */,
-				672A11F528CB0F2C0088C8CD /* Release */,
+				679BCA8B28CE700B00175CD5 /* Debug */,
+				679BCA8C28CE700B00175CD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 672A11DC28CB0F2A0088C8CD /* Project object */;
+	rootObject = 679BCA6E28CE700900175CD5 /* Project object */;
 }

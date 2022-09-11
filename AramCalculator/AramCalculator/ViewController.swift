@@ -2,23 +2,16 @@
 //  ViewController.swift
 //  AramCalculator
 //
-//  Created by 박민주 on 2022/09/09.
+//  Created by 박민주 on 2022/09/12.
 //
 
-import Cocoa
+import UIKit
 
-class ViewController: NSViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-    }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
     }
 
 
