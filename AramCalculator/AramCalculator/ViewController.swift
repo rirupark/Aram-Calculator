@@ -9,6 +9,7 @@ import UIKit
 import Foundation
 
 class ViewController: UIViewController {
+    
     // MARK: - Properties
     @IBOutlet weak var tf_input: UITextField!
     @IBOutlet weak var lb_result: UILabel!
@@ -17,6 +18,15 @@ class ViewController: UIViewController {
         let output = getNumToEatAram(input)
         lb_result.text = output
     }
+    @IBAction func btn_plus(_ sender: Any) {
+        guard let input = Int(tf_input.text ?? "") else { return }
+        tf_input.text = String(input + 1)
+    }
+    @IBAction func btn_minus(_ sender: Any) {
+        guard let input = Int(tf_input.text ?? "") else { return }
+        tf_input.text = String(input - 1)
+    }
+    
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
