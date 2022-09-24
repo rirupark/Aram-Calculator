@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         guard let input = Int(tf_input.text ?? "") else { return }
         let output = getNumToEatAram(input)
         lb_result.text = output
+        
+        // 기기에 식수 데이터 저장하기 - 계산하기 버튼 클릭 시 저장됨.
+        UserDefaults.standard.set(String(input), forKey: "key")
     }
     @IBAction func btn_plus(_ sender: Any) {
         guard let input = Int(tf_input.text ?? "") else { return }
@@ -32,6 +35,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getData()
         setNumKeyBoard()
     }
     
@@ -78,4 +82,11 @@ class ViewController: UIViewController {
     func setNumKeyBoard() {
         tf_input.keyboardType = .numberPad
     }
+    
+    
+    // MARK: - 기기에 저장된 식수 데이터 불러오는 함수
+    func getData() {
+        tf_input.text = UserDefaults.standard.string(forKey: "key")
+    }
+    
 }
