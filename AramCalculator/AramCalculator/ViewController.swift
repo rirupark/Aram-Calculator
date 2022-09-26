@@ -57,7 +57,7 @@ class ViewController: UIViewController {
 
         let result = Double(input) / Double(dday)
         
-        return result <= 3.0 ? "매일 \(String(format: "%.2f", result))끼씩 먹으면 다 먹을 수 있어요 !" : "매일 3끼씩 먹어도 \(input - (dday * 3 - 2))식이 남아요 !"
+        return result <= 3.0 ? "매일 \(String(format: "%.2f", result))끼씩 먹으면 다 먹을 수 있어요." : "매일 3끼씩 먹어도 \(input - (dday * 3 - 2))식이 남아요 !"
     }
 
     
