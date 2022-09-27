@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var tf_input: UITextField!
     @IBOutlet weak var lb_result: UILabel!
+    @IBOutlet weak var view_calculate: UIView!
+    @IBOutlet weak var view_left: UIView!
+
+
     @IBAction func btn_calculate(_ sender: Any) {
         guard let input = Int(tf_input.text ?? "") else { return }
         let output = getNumToEatAram(input)
@@ -30,7 +34,20 @@ class ViewController: UIViewController {
         tf_input.text = String(input - 1)
     }
     
+    @IBAction func switchViews(_ sender: UISegmentedControl) {
+        print("switchViews start")
+        if sender.selectedSegmentIndex == 0 {
+            view_calculate.alpha = 1.0
+            view_left.alpha = 0.0
+            print("view1")
+        } else {
+            view_calculate.alpha = 0.0
+            view_left.alpha = 1.0
+            print("view2")
+        }
+    }
     
+
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,3 +107,4 @@ class ViewController: UIViewController {
     }
     
 }
+

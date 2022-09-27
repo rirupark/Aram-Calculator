@@ -88,20 +88,42 @@
                                     <segment title="식수 계산하기"/>
                                     <segment title="다 못먹는다면 ?"/>
                                 </segments>
+                                <connections>
+                                    <action selector="switchViews:" destination="BYZ-38-t0r" eventType="valueChanged" id="hOC-S4-6hL"/>
+                                </connections>
                             </segmentedControl>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onr-to-DHX">
+                                <rect key="frame" x="30" y="305" width="354" height="534"/>
+                                <connections>
+                                    <segue destination="MG3-OI-fLY" kind="embed" id="Ll3-Yi-vDa"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEy-ad-1Ju">
+                                <rect key="frame" x="30" y="305" width="354" height="534"/>
+                                <connections>
+                                    <segue destination="rfp-Hi-3Sd" kind="embed" id="GbY-RB-EcU"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Onr-to-DHX" firstAttribute="top" secondItem="3nx-li-0eG" secondAttribute="bottom" constant="20" id="3av-2V-cSm"/>
                             <constraint firstItem="fwU-0d-7i8" firstAttribute="top" secondItem="Fpj-74-MEM" secondAttribute="bottom" constant="14" id="4Sf-5i-T02"/>
                             <constraint firstItem="3nx-li-0eG" firstAttribute="top" secondItem="mV4-xo-UOb" secondAttribute="bottom" constant="31" id="4rc-wh-NgV"/>
                             <constraint firstItem="HDt-xM-ef9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5aO-06-YBM"/>
                             <constraint firstItem="fwU-0d-7i8" firstAttribute="leading" secondItem="HDt-xM-ef9" secondAttribute="trailing" constant="10" id="9gh-oh-370"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KEy-ad-1Ju" secondAttribute="trailing" constant="30" id="AmG-V3-6Xl"/>
                             <constraint firstItem="Fpj-74-MEM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HVr-3c-7zz"/>
                             <constraint firstItem="3nx-li-0eG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KrI-kU-xUE"/>
+                            <constraint firstItem="Onr-to-DHX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Lht-6f-bCJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Onr-to-DHX" secondAttribute="trailing" constant="30" id="NgJ-ZV-g7B"/>
+                            <constraint firstItem="KEy-ad-1Ju" firstAttribute="top" secondItem="3nx-li-0eG" secondAttribute="bottom" constant="20" id="OMU-Gc-fuu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Onr-to-DHX" secondAttribute="bottom" constant="23" id="WXs-2w-718"/>
                             <constraint firstItem="MaL-sA-KWz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Z5g-zO-Jls"/>
                             <constraint firstItem="mV4-xo-UOb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ako-WZ-ELO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3nx-li-0eG" secondAttribute="trailing" constant="30" id="bmN-6v-DHP"/>
+                            <constraint firstItem="KEy-ad-1Ju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="erL-Sk-ksX"/>
                             <constraint firstItem="3nx-li-0eG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="j2U-tH-3Fu"/>
                             <constraint firstItem="MaL-sA-KWz" firstAttribute="top" secondItem="EEo-kO-0jB" secondAttribute="bottom" constant="32" id="j6E-52-rhC"/>
                             <constraint firstItem="mV4-xo-UOb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kZZ-3K-pm7"/>
@@ -111,17 +133,48 @@
                             <constraint firstItem="Fpj-74-MEM" firstAttribute="top" secondItem="3nx-li-0eG" secondAttribute="bottom" constant="68" id="rmL-SA-gVZ"/>
                             <constraint firstItem="EEo-kO-0jB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sOS-8z-X1X"/>
                             <constraint firstItem="HDt-xM-ef9" firstAttribute="top" secondItem="Fpj-74-MEM" secondAttribute="bottom" constant="12" id="uD9-qP-XWB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KEy-ad-1Ju" secondAttribute="bottom" constant="23" id="uvI-LZ-VFM"/>
                             <constraint firstItem="cl1-16-MJw" firstAttribute="top" secondItem="Fpj-74-MEM" secondAttribute="bottom" constant="14" id="vhR-Sj-Sjw"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lb_result" destination="MaL-sA-KWz" id="o11-6k-UC8"/>
                         <outlet property="tf_input" destination="HDt-xM-ef9" id="civ-JQ-ufP"/>
+                        <outlet property="view_calculate" destination="KEy-ad-1Ju" id="5f1-Dn-zp4"/>
+                        <outlet property="view_left" destination="Onr-to-DHX" id="xOf-cK-V46"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vob-Td-uFJ">
+            <objects>
+                <viewController id="MG3-OI-fLY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zm8-Ka-CMI">
+                        <rect key="frame" x="0.0" y="0.0" width="354" height="534"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bik-Vq-nXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="871"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IiP-Pv-I6z">
+            <objects>
+                <viewController id="rfp-Hi-3Sd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tnS-Gb-opj">
+                        <rect key="frame" x="0.0" y="0.0" width="354" height="534"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rij-gO-kGo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191" y="871"/>
         </scene>
     </scenes>
     <resources>
@@ -129,6 +182,9 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
