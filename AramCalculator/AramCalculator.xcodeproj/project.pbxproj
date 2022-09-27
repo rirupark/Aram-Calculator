@@ -13,6 +13,7 @@
 		679BCA8128CE700900175CD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679BCA7F28CE700900175CD5 /* Main.storyboard */; };
 		679BCA8328CE700B00175CD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 679BCA8228CE700B00175CD5 /* Assets.xcassets */; };
 		679BCA8628CE700B00175CD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679BCA8428CE700B00175CD5 /* LaunchScreen.storyboard */; };
+		67D8A1D228E3384100446514 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D8A1D128E3384100446514 /* CalculateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		679BCA8228CE700B00175CD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		679BCA8528CE700B00175CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		679BCA8728CE700B00175CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D8A1D128E3384100446514 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				679BCA8228CE700B00175CD5 /* Assets.xcassets */,
 				679BCA8428CE700B00175CD5 /* LaunchScreen.storyboard */,
 				679BCA8728CE700B00175CD5 /* Info.plist */,
+				67D8A1D128E3384100446514 /* CalculateViewController.swift */,
 			);
 			path = AramCalculator;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				679BCA7E28CE700900175CD5 /* ViewController.swift in Sources */,
+				67D8A1D228E3384100446514 /* CalculateViewController.swift in Sources */,
 				679BCA7A28CE700900175CD5 /* AppDelegate.swift in Sources */,
 				679BCA7C28CE700900175CD5 /* SceneDelegate.swift in Sources */,
 			);
