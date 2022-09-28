@@ -41,6 +41,9 @@ class ViewController: UIViewController {
     func makeRounded() {
         view_calculate.layer.cornerRadius = 15
         view_calculate.layer.masksToBounds = true
+        
+        view_left.layer.cornerRadius = 15
+        view_left.layer.masksToBounds = true
     }
     
     

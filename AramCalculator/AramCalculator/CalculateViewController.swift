@@ -21,10 +21,12 @@ class CalculateViewController: UIViewController {
         // 기기에 식수 데이터 저장하기 - 계산하기 버튼 클릭 시 저장됨.
         UserDefaults.standard.set(String(input), forKey: "key")
     }
+    
     @IBAction func btn_plus(_ sender: Any) {
         guard let input = Int(tf_input.text ?? "") else { return }
         tf_input.text = String(input + 1)
     }
+    
     @IBAction func btn_minus(_ sender: Any) {
         guard let input = Int(tf_input.text ?? "") else { return }
         tf_input.text = String(input - 1)
@@ -57,7 +59,7 @@ class CalculateViewController: UIViewController {
 
         let result = Double(input) / Double(dday)
         
-        return result <= 3.0 ? "매일 \(String(format: "%.2f", result))끼씩 먹으면 다 먹을 수 있어요." : "매일 3끼씩 먹어도 \(input - (dday * 3 - 2))식이 남아요 !"
+        return result <= 3.0 ? "매일 \(String(format: "%.2f", result))끼씩 먹으면 다 먹을 수 있어요 :)" : "매일 3끼씩 먹어도 \(input - (dday * 3 - 2))식이 남아요 :("
     }
 
     
@@ -87,6 +89,12 @@ class CalculateViewController: UIViewController {
     // MARK: - 기기에 저장된 식수 데이터 불러오는 함수
     func getData() {
         tf_input.text = UserDefaults.standard.string(forKey: "key")
+    }
+    
+    
+    // MARK: - 결과 텍스트 커스텀 함수
+    func textCustom() {
+        // Something custom code...
     }
 
 }
