@@ -32,8 +32,6 @@ class CalculateViewController: UIViewController {
         
         // 기기에 남은 식수 데이터 저장
         UserDefaults.standard.set(resultData, forKey: "leftFood")
-        print("CalcVC's resultData :", resultData)
-        print("CalcVC's resultData from UserDefault :", UserDefaults.standard.integer(forKey: "leftFood"))
      
     }
     
@@ -114,5 +112,6 @@ class CalculateViewController: UIViewController {
     func textCustom() {
         // Something custom code...
     }
+
 
 }

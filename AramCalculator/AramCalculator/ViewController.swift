@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var view_left: UIView!
     
     
-
     @IBAction func switchViews(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             view_calculate.alpha = 1.0
@@ -26,6 +25,7 @@ class ViewController: UIViewController {
         } else {
             view_calculate.alpha = 0.0
             view_left.alpha = 1.0
+            setData()
             print("second view")
         }
     }
@@ -49,9 +49,11 @@ class ViewController: UIViewController {
     }
 
     
-    
-    func setLabel(completion: @escaping () -> Void) {
-        
+    // MARK: - 기기에 저장된 남은 식수 데이터를 불러와서 IfLeaveFoodVC의 Label에 세팅시키는 함수
+    func setData() {
+        // 자식 뷰컨 불러오기
+        let ILFVC = children.first as! IfLeaveFoodViewController
+        ILFVC.setLabel(String(UserDefaults.standard.integer(forKey: "leftFood")))
     }
     
 }

@@ -12,25 +12,20 @@ class IfLeaveFoodViewController: UIViewController {
     
     @IBOutlet weak var lbDataFromCalcVC: UILabel?
     
-//    var completionRefer: () -> Void = {
-//        lbDataFromCalcVC!.text = String(UserDefaults.standard.integer(forKey: "leftFood"))
-//    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(getData())
-        lbDataFromCalcVC!.text = String(UserDefaults.standard.integer(forKey: "leftFood"))
-        
 
     }
     
+    // 기기에 저장된 남은 식수 데이터를 VC로 보내기
     
-    // MARK: - 기기에 저장된 남은 식수 데이터 불러오는 함수
-    func getData() -> Int {
-        return UserDefaults.standard.integer(forKey: "leftFood")
+    // MARK: - IfLeaveFoodVC의 Label에 남은 식수를 세팅하는 함수
+    func setLabel(_ text: String) {
+        lbDataFromCalcVC!.text = text
     }
     
+
 }
 
 
