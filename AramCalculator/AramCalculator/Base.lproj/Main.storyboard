@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AramCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="AramCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEy-ad-1Ju">
                                 <rect key="frame" x="30" y="282" width="354" height="560"/>
                                 <connections>
-                                    <segue destination="rfp-Hi-3Sd" kind="embed" id="GbY-RB-EcU"/>
+                                    <segue destination="rfp-Hi-3Sd" kind="embed" identifier="embedContainer1" id="GbY-RB-EcU"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여러분들의 아람관 식수 줄이기를 장려합니다 :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uz-up-XEv">
@@ -92,16 +92,31 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--If Leave Food View Controller-->
         <scene sceneID="vob-Td-uFJ">
             <objects>
-                <viewController id="MG3-OI-fLY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IfLeaveFoodViewController" id="MG3-OI-fLY" customClass="IfLeaveFoodViewController" customModule="AramCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="scaleToFill" id="Zm8-Ka-CMI">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="560"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxD-wc-E0g">
+                                <rect key="frame" x="156" y="291.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KgB-DQ-zus"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gxD-wc-E0g" firstAttribute="centerY" secondItem="KgB-DQ-zus" secondAttribute="centerY" id="Ybs-Aa-nE2"/>
+                            <constraint firstItem="gxD-wc-E0g" firstAttribute="centerX" secondItem="KgB-DQ-zus" secondAttribute="centerX" id="ZrP-lK-F7g"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbDataFromCalcVC" destination="gxD-wc-E0g" id="HSy-8n-tBL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bik-Vq-nXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,13 +125,13 @@
         <!--Calculate View Controller-->
         <scene sceneID="IiP-Pv-I6z">
             <objects>
-                <viewController id="rfp-Hi-3Sd" customClass="CalculateViewController" customModule="AramCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculateViewController" id="rfp-Hi-3Sd" customClass="CalculateViewController" customModule="AramCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tnS-Gb-opj">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="560"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFb-av-SeY">
-                                <rect key="frame" x="96" y="213.5" width="31" height="31"/>
+                                <rect key="frame" x="96" y="223.5" width="31" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="uWG-2x-Hmx"/>
                                     <constraint firstAttribute="width" constant="31" id="wRI-pI-4d1"/>
@@ -131,19 +146,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022년도 2학기 아람관 종료일 : 2022.12.21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaN-6h-UGC">
-                                <rect key="frame" x="74.5" y="158.5" width="205" height="14"/>
+                                <rect key="frame" x="74.5" y="168.5" width="205" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매일 몇 끼씩 먹으면 될까요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eco-D6-lso">
-                                <rect key="frame" x="99.5" y="306.5" width="155.5" height="17"/>
+                                <rect key="frame" x="99.5" y="316.5" width="155.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W09-kp-HPD">
-                                <rect key="frame" x="227" y="213.5" width="31" height="31"/>
+                                <rect key="frame" x="227" y="223.5" width="31" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="31" id="SGC-zG-iZg"/>
                                     <constraint firstAttribute="height" constant="31" id="eQD-Px-6bE"/>
@@ -158,18 +173,18 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="식수 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YhD-wM-bhz">
-                                <rect key="frame" x="137" y="212.5" width="80" height="34"/>
+                                <rect key="frame" x="137" y="222.5" width="80" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☺️ 남은 식수를 입력해주세요 ☺️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4s-ZX-3yA">
-                                <rect key="frame" x="69.5" y="134" width="215" height="19.5"/>
+                                <rect key="frame" x="69.5" y="144" width="215" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozu-Qk-Sp6">
-                                <rect key="frame" x="52" y="338.5" width="250" height="30"/>
+                                <rect key="frame" x="52" y="348.5" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="JJ6-8U-c7R"/>
                                 </constraints>
@@ -196,7 +211,7 @@
                             <constraint firstItem="YhD-wM-bhz" firstAttribute="top" secondItem="oaN-6h-UGC" secondAttribute="bottom" constant="40" id="OFr-A8-gkd"/>
                             <constraint firstItem="YhD-wM-bhz" firstAttribute="leading" secondItem="BFb-av-SeY" secondAttribute="trailing" constant="10" id="RkU-3j-n8J"/>
                             <constraint firstItem="BFb-av-SeY" firstAttribute="top" secondItem="oaN-6h-UGC" secondAttribute="bottom" constant="41" id="bgZ-xZ-Xtz"/>
-                            <constraint firstItem="W4s-ZX-3yA" firstAttribute="top" secondItem="68U-we-qCb" secondAttribute="top" constant="90" id="cTK-Pt-M3x"/>
+                            <constraint firstItem="W4s-ZX-3yA" firstAttribute="top" secondItem="68U-we-qCb" secondAttribute="top" constant="100" id="cTK-Pt-M3x"/>
                             <constraint firstItem="W09-kp-HPD" firstAttribute="leading" secondItem="YhD-wM-bhz" secondAttribute="trailing" constant="10" id="eAJ-xi-D11"/>
                             <constraint firstItem="W4s-ZX-3yA" firstAttribute="centerX" secondItem="68U-we-qCb" secondAttribute="centerX" id="isq-Xx-Ib5"/>
                             <constraint firstItem="oaN-6h-UGC" firstAttribute="top" secondItem="W4s-ZX-3yA" secondAttribute="bottom" constant="5" id="udf-gj-U5w"/>
