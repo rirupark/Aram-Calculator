@@ -64,11 +64,11 @@
 				679BCA7B28CE700900175CD5 /* SceneDelegate.swift */,
 				679BCA7D28CE700900175CD5 /* ViewController.swift */,
 				67D8A1D128E3384100446514 /* CalculateViewController.swift */,
+				67CBE16728E5CD670094E5D1 /* IfLeaveFoodViewController.swift */,
 				679BCA7F28CE700900175CD5 /* Main.storyboard */,
 				679BCA8228CE700B00175CD5 /* Assets.xcassets */,
 				679BCA8428CE700B00175CD5 /* LaunchScreen.storyboard */,
 				679BCA8728CE700B00175CD5 /* Info.plist */,
-				67CBE16728E5CD670094E5D1 /* IfLeaveFoodViewController.swift */,
 			);
 			path = AramCalculator;
 			sourceTree = "<group>";

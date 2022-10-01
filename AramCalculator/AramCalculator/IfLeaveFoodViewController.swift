@@ -10,7 +10,7 @@ import CoreData
 
 class IfLeaveFoodViewController: UIViewController {
     
-    @IBOutlet weak var lbDataFromCalcVC: UILabel?
+    @IBOutlet weak var lbDataFromCalcVC: UILabel!
     
 
     override func viewDidLoad() {
@@ -22,9 +22,8 @@ class IfLeaveFoodViewController: UIViewController {
     
     // MARK: - IfLeaveFoodVC의 Label에 남은 식수를 세팅하는 함수
     func setLabel(_ text: String) {
-        lbDataFromCalcVC!.text = text
+        lbDataFromCalcVC.text = text
     }
-    
 
 }
 
