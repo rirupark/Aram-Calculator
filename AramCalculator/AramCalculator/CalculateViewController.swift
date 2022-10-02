@@ -6,11 +6,6 @@
 //
 
 import UIKit
-import CoreData
-
-struct LeftFoodCount {
-    public static var data: Int = 0
-}
 
 class CalculateViewController: UIViewController {
     
@@ -20,15 +15,13 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var tf_input: UITextField!
     @IBOutlet weak var lb_result: UILabel!
     
-    let container = NSPersistentContainer(name: "DataModel")
-    
     @IBAction func btn_calculate(_ sender: Any) {
         guard let input = Int(tf_input.text ?? "") else { return }
         let output = getNumToEatAram(input)
         lb_result.text = output
         
         // 기기에 식수 데이터 저장하기 - 계산하기 버튼 클릭 시 저장됨.
-        UserDefaults.standard.set(String(input), forKey: "key")
+        UserDefaults.standard.set(String(input), forKey: "food")
         
         // 기기에 남은 식수 데이터 저장
         UserDefaults.standard.set(resultData, forKey: "leftFood")
@@ -71,11 +64,14 @@ class CalculateViewController: UIViewController {
         print("아람 배식하는 식수 :", dday * 3 - 2)
 
         let result = Double(input) / Double(dday)
+        print("매일 먹어야 하는 식수 :", result)
         
         // 남은 식수의 비용으로 대체 음식을 계산하기 위한 남은 식수 데이터
         resultData = input - (dday * 3 - 2) > 0 ? input - (dday * 3 - 2) : 0
+        print("남은 식수 :", resultData)
         
-        return result <= 3.0 ? "매일 \(String(format: "%.2f", result))끼씩 먹으면 다 먹을 수 있어요 :)" : "매일 3끼씩 먹어도 \(input - (dday * 3 - 2))식이 남아요 :("
+        // 남은 식수가 아람관에서 배식하는 식수보다 적어야 하고, result값이 3보다 같거나 작아야 다 먹을 수 있음.
+        return result <= 3.0 && (dday * 3 - 2) >= input ? "매일 \(String(format: "%.2f", result))끼씩 먹으면 다 먹을 수 있어요 :)" : "매일 3끼씩 먹어도 \(input - (dday * 3 - 2))식이 남아요 :("
     }
 
     
@@ -104,7 +100,7 @@ class CalculateViewController: UIViewController {
     
     // MARK: - 기기에 저장된 식수 데이터 불러오는 함수
     func getData() {
-        tf_input.text = UserDefaults.standard.string(forKey: "key")
+        tf_input.text = UserDefaults.standard.string(forKey: "food")
     }
     
     
