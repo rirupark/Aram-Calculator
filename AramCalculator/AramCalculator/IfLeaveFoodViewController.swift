@@ -11,6 +11,7 @@ class IfLeaveFoodViewController: UIViewController {
     
     @IBOutlet weak var lbDataFromCalcVC: UILabel!
     @IBOutlet weak var lbAlternativeFood: UILabel!
+    @IBOutlet weak var ivAlternativeFood: UIImageView!
     
 
     override func viewDidLoad() {
@@ -30,6 +31,13 @@ class IfLeaveFoodViewController: UIViewController {
     func setLabelAlternativeFood(_ text: String) {
         lbAlternativeFood.text = text
     }
+    
+    
+    // MARK: - IfLeaveFoodVC의 ImageView에 대체 음식 이미지를 세팅하는 함수
+    func setImageAlternativeFood(_ image: String) {
+        ivAlternativeFood.image = UIImage(named: image)
+    }
+
 
 }
 

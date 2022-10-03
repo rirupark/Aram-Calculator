@@ -66,13 +66,15 @@ class ViewController: UIViewController {
         // 변수 선언
         let leftFoodPrice = leftFoodCnt * 3600
         var textAlternativeFood = "" // 최종 출력 텍스트
+        var imgAlternativeFood = "" // 최종 출력 이미지
         // 가격 비교
-        if leftFoodPrice < 3600 { textAlternativeFood = "낭비되는 돈이 없어요 :)" }
-        else if leftFoodPrice < 6000 { textAlternativeFood = "커피 1잔을 마실 수 있어요." }
-        else if leftFoodPrice < 20000 { textAlternativeFood = "국밥 \(leftFoodPrice / 6000)그릇을 먹을 수 있어요." }
-        else { textAlternativeFood = "치킨 \(leftFoodPrice / 20000)마리를 먹을 수 있어요." }
+        if leftFoodPrice < 3600 { textAlternativeFood = "낭비되는 돈이 없어요 :)"; imgAlternativeFood = "smiley" }
+        else if leftFoodPrice < 6000 { textAlternativeFood = "커피 1잔을 마실 수 있어요."; imgAlternativeFood = "coffee" }
+        else if leftFoodPrice < 20000 { textAlternativeFood = "국밥 \(leftFoodPrice / 6000)그릇을 먹을 수 있어요."; imgAlternativeFood = "riceSoup" }
+        else { textAlternativeFood = "치킨 \(leftFoodPrice / 20000)마리를 먹을 수 있어요."; imgAlternativeFood = "chicken" }
         // setText
         ILFVC.setLabelAlternativeFood(textAlternativeFood)
+        ILFVC.setImageAlternativeFood(imgAlternativeFood)
     }
     
 }

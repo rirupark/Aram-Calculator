@@ -1,17 +1,14 @@
 {
   "images" : [
     {
-      "filename" : "riceSoup.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "riceSoup-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "riceSoup-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
