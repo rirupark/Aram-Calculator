@@ -108,26 +108,26 @@
                                     <constraint firstAttribute="height" constant="120" id="kgU-Rh-JFo"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM4-NR-Z9u">
-                                <rect key="frame" x="156" y="294" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxD-wc-E0g">
+                                <rect key="frame" x="157.5" y="294" width="39.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxD-wc-E0g">
-                                <rect key="frame" x="162.5" y="325" width="29" height="13.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM4-NR-Z9u">
+                                <rect key="frame" x="160.5" y="320.5" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.1895902968" green="0.1895902968" blue="0.1895902968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KgB-DQ-zus"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gxD-wc-E0g" firstAttribute="top" secondItem="gM4-NR-Z9u" secondAttribute="bottom" constant="10" id="3or-0R-7h4"/>
-                            <constraint firstItem="gM4-NR-Z9u" firstAttribute="top" secondItem="XGb-86-kHV" secondAttribute="bottom" constant="30" id="NH6-cj-255"/>
+                            <constraint firstItem="gM4-NR-Z9u" firstAttribute="top" secondItem="gxD-wc-E0g" secondAttribute="bottom" constant="7" id="0Vo-Ub-keN"/>
                             <constraint firstItem="gM4-NR-Z9u" firstAttribute="centerX" secondItem="KgB-DQ-zus" secondAttribute="centerX" id="WEM-D0-Dwr"/>
                             <constraint firstItem="gxD-wc-E0g" firstAttribute="centerX" secondItem="KgB-DQ-zus" secondAttribute="centerX" id="ZrP-lK-F7g"/>
+                            <constraint firstItem="gxD-wc-E0g" firstAttribute="top" secondItem="XGb-86-kHV" secondAttribute="bottom" constant="30" id="dgs-eW-zzV"/>
                             <constraint firstItem="XGb-86-kHV" firstAttribute="top" secondItem="KgB-DQ-zus" secondAttribute="top" constant="100" id="nll-ci-jwE"/>
                             <constraint firstItem="XGb-86-kHV" firstAttribute="centerX" secondItem="KgB-DQ-zus" secondAttribute="centerX" id="rPG-ln-pAZ"/>
                         </constraints>

@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         if leftFoodPrice < 3600 { textAlternativeFood = "낭비되는 돈이 없어요 :)"; imgAlternativeFood = "good" }
         else if leftFoodPrice < 6000 { textAlternativeFood = "커피 1잔을 마실 수 있어요."; imgAlternativeFood = "coffee" }
         else if leftFoodPrice < 20000 { textAlternativeFood = "국밥 \(leftFoodPrice / 6000)그릇을 먹을 수 있어요."; imgAlternativeFood = "riceSoup" }
-        else { textAlternativeFood = "치킨 \(leftFoodPrice / 20000)마리를 먹을 수 있어요."; imgAlternativeFood = "chicken" }
+        else { textAlternativeFood = "치킨 \(leftFoodPrice / 20000)마리를 먹을 수 있는 돈이에요..🥲"; imgAlternativeFood = "chicken" }
         // setText
         ILFVC.setLabelAlternativeFood(textAlternativeFood)
         ILFVC.setImageAlternativeFood(imgAlternativeFood)

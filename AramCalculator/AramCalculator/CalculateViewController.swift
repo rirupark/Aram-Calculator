@@ -53,7 +53,14 @@ class CalculateViewController: UIViewController {
     func getNumToEatAram(_ input:Int) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        // 시간 차 구하기
+        let timeFormatter = DateFormatter()
+        timeFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        let nowTime = timeFormatter.date(from: getNowTime()) ?? Date()
+        print("nowTime :", nowTime)
 
+        
         let today = dateFormatter.date(from: getNowDate()) ?? Date()
         let endday = dateFormatter.date(from: "2022-12-21") ?? Date() // 아람 종료일(12/21) 당일은 아침만 배식함.
 
@@ -75,18 +82,33 @@ class CalculateViewController: UIViewController {
     }
 
     
+    // MARK: - 현재 날짜와 시각을 구하는 함수
+    func getNowTime() -> String {
+        let nowDate = Date() // 현재의 Date 날짜 및 시간
+        let timeFormatter = DateFormatter() // Date 포맷 객체 선언
+        
+        timeFormatter.locale = Locale(identifier: "ko_kr") // 한국 지정
+        timeFormatter.dateFormat = "yyyy-MM-dd HH:mm" // Date 포맷 타입 지정
+        
+        let date = timeFormatter.string(from: nowDate) // 포맷된 형식 문자열로 반환
+
+        print("현재 날짜 :", date)
+        return date
+    }
+    
+    
     // MARK: - 현재 날짜를 구하는 함수
     /// 현재 날짜를 구하는 함수
-    func getNowDate() -> String {
+    func getNowDate() ->String {
         let nowDate = Date() // 현재의 Date 날짜 및 시간
         let dateFormatter = DateFormatter() // Date 포맷 객체 선언
         
-        dateFormatter.locale = Locale(identifier: "ko") // 한국 지정
+        dateFormatter.locale = Locale(identifier: "ko_kr") // 한국 지정
         dateFormatter.dateFormat = "yyyy-MM-dd" // Date 포맷 타입 지정
         
         let date = dateFormatter.string(from: nowDate) // 포맷된 형식 문자열로 반환
 
-        print("현재 날짜 :", date)
+        print("현재 시각 :", date)
         return date
     }
 
