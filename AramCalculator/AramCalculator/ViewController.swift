@@ -53,7 +53,15 @@ class ViewController: UIViewController {
     func setDataLeftFoodCount() {
         // 자식 뷰컨 불러오기
         let ILFVC = children.first as! IfLeaveFoodViewController
-        ILFVC.setLabelLeftFoodCount(String(UserDefaults.standard.integer(forKey: "leftFood") * 3600) + "원이 낭비돼요.")
+        let leftFoodPrice = UserDefaults.standard.integer(forKey: "leftFood") * 3600
+        
+        // ","로 천원 단위 구별하기
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        let leftFoodPriceStr = numberFormatter.string(from: NSNumber(value: leftFoodPrice)) ?? ""
+        
+        // 라벨에 세팅
+        ILFVC.setLabelLeftFoodCount(leftFoodPriceStr + "원이 낭비돼요.")
     }
     
     
@@ -64,13 +72,13 @@ class ViewController: UIViewController {
         // 기기에 저장된 남은 식수 불러오기
         let leftFoodCnt = UserDefaults.standard.integer(forKey: "leftFood")
         // 변수 선언
-        let leftFoodPrice = leftFoodCnt * 3600
+        let leftFoodPrice = leftFoodCnt * 3600 // 남는 비용
         var textAlternativeFood = "" // 최종 출력 텍스트
         var imgAlternativeFood = "" // 최종 출력 이미지
         // 가격 비교
         if leftFoodPrice < 3600 { textAlternativeFood = "낭비되는 돈이 없어요 :)"; imgAlternativeFood = "good" }
-        else if leftFoodPrice < 6000 { textAlternativeFood = "커피 1잔을 마실 수 있어요."; imgAlternativeFood = "coffee" }
-        else if leftFoodPrice < 20000 { textAlternativeFood = "국밥 \(leftFoodPrice / 6000)그릇을 먹을 수 있어요."; imgAlternativeFood = "riceSoup" }
+        else if leftFoodPrice < 6000 { textAlternativeFood = "커피 1잔을 마실 수 있는 돈이에요..🥲"; imgAlternativeFood = "coffee" }
+        else if leftFoodPrice < 20000 { textAlternativeFood = "국밥 \(leftFoodPrice / 6000)그릇을 먹을 수 있는 돈이에요..🥲"; imgAlternativeFood = "riceSoup" }
         else { textAlternativeFood = "치킨 \(leftFoodPrice / 20000)마리를 먹을 수 있는 돈이에요..🥲"; imgAlternativeFood = "chicken" }
         // setText
         ILFVC.setLabelAlternativeFood(textAlternativeFood)
