@@ -64,7 +64,7 @@ class CalculateViewController: UIViewController {
         print("남은 일수 :", dday)
         
         // 시간 차이 구하기 - 계산하는 시각에 따라 남은 아람 배식 식수가 달라지기 때문
-        // 당일 정각부터 계산하는 시각까지의 차이가 각각 조식, 중식, 석식 배식 시간보다 크면 배식 시간을 놓친 것이다.
+        // 당일 정각부터 계산하는 시각까지의 차이가 각각 조식, 중식, 석식 배식 시간보다 크면 배식 시간을 놓친 것.
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
         let startTime = dateFormatter.date(from: getNowDate() + " 00:00") ?? Date()
         let endTime = dateFormatter.date(from: getNowTime()) ?? Date()
@@ -159,6 +159,7 @@ class CalculateViewController: UIViewController {
 
         return date
     }
+    
     
     // MARK: - 현재 날짜의 요일을 구하는 함수
     func getNowDayOfTheWeek() ->String {
